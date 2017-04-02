@@ -1,0 +1,6 @@
+Font specs:
+
+Lobster:
+    Usage = font-family: 'Lobster', cursive;
+Play:
+    Usage = font-family: 'Play', sans-serif;
