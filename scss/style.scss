@@ -1,5 +1,65 @@
-// _palette.scss
+@import "_palette.scss";
 
 body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
     background-color: $color-primary-2;
+    background-size: cover;
+}
+
+ul li {
+    color: #fff;
+}
+
+.game-controller input[type=radio],
+.game-controller .checked { 
+    display:none; 
+} 
+
+.game-controller input[type="radio"]:checked ~ .checked,
+.game-controller ~ .checked
+{
+    display: inline-block;
+    color: rgba(255,255,255,.33);
+}
+ 
+.game-controller input[type="radio"]:checked ~ .unchecked
+{
+    display: none;
+}
+
+/*input[type=checkbox] + label:before { content: "\f096"; } unchecked icon 
+input[type=checkbox] + label:before { letter-spacing: 10px; }  space between checkbox and label */
+
+.logo {
+    font-family: 'Lobster', cursive;
+    color: #fff;
+    font-size: 72px;
+    margin: 72px auto 0 auto;
+    text-align: center;
+}
+
+.info {
+    margin-top: 50px;
+    font-family: 'Play', sans-serif; 
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+}
+
+.game-options {
+    font-size: 16px;
+    font-family: 'Play', sans-serif;
+}
+
+.game-options i {
+    font-size: 48px;
+}
+
+.play {
+    font-family: 'Lobster', cursive;
+    font-size: 48px;
+    color: $color-primary-2;
+    margin: 48px auto 0 78px;
 }

@@ -11,8 +11,10 @@
         <!-- Place favicon.ico in the root directory -->
         <!-- CSS Downloads -->
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/style.min.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
         <!-- Font Downloads -->
         <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
@@ -23,10 +25,53 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-
-        <!-- Add your site or application content here -->
-        <p>Rock-Paper-Scissors</p>
-
+        <div class="container-fluid">
+            <!-- Add your site or application content here -->
+            <h1 class="logo">Rock-Paper-Scissors</h1>
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4">
+                    <p class="info">Choose rock, paper or scissors and play</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="list-inline text-center">
+                        <li class="game-options col-md-2 col-md-offset-3">
+                            <label class="game-controller">
+                            <input id="rock" type="radio" />
+                                <i class="fa fa-hand-rock-o fa-rotate-90 unchecked" aria-hidden="true"></i>
+                                <i class="fa fa-hand-rock-o fa-rotate-90 checked" aria-hidden="true"></i>
+                            <br />
+                            Rock
+                            </label>
+                        </li>
+                        <li class="game-options col-md-2">
+                            <label class="game-controller">
+                                <input id="paper" type="radio" />
+                                <i class="fa fa-hand-paper-o fa-rotate-90 unchecked" aria-hidden="true"></i>
+                                <i class="fa fa-hand-paper-o fa-rotate-90 checked" aria-hidden="true"></i>
+                                <br />
+                                Paper
+                            </label>
+                        </li>
+                        <li class="game-options col-md-2">
+                            <label class="game-controller">
+                                <input id="scissors" type="radio" />
+                                <i class="fa fa-hand-scissors-o fa-rotate-90 unchecked" aria-hidden="true"></i>
+                                <i class="fa fa-hand-scissors-o fa-rotate-90 checked" aria-hidden="true"></i>
+                                <br />
+                                Scissors
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 col-md-offset-5">
+                    <button class="btn btn-default play">Play</button>
+                </div>
+            </div>
+        </div>
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
